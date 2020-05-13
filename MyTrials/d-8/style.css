@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0; top: 0; left: 0; font-family: Arial;}
+.container{
+	width: 1000px; height: 500px;
+	margin: 0px auto;
+}
+.kutu{
+	width: 150px; height: 300px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 30px;
+	background-color: #ccc;
+	transition: all 550ms;
+}
+.kutu:hover{
+	width: 170px;
+}
+.kutu .info{
+	position: relative;
+	width: 150px; height: 70px;
+	background-color: rgba(255,255,255,1);
+	top: 300px;
+	opacity: 0;
+	z-index: -1;
+	transition: all 550ms;
+}
+.kutu:hover .info{
+	width: 170px;
+	opacity: 1;
+	top: 230px;
+	z-index: 2;
+	background-color: rgba(255,255,255,0.60);
+}

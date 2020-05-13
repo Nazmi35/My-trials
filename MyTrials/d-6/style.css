@@ -1,0 +1,41 @@
+*{margin: 0px; padding: 0px; left: 0; top: 0;}
+.sol-menu{
+	left: 0;
+	margin-top: 125px;
+	padding-top: 15px;
+	width: 120px;
+	height: 250px;
+	background-color: red;
+	/*border: 1px solid black;*/
+	border-radius: 1px 8px 8px 1px;
+	font-family: Arial;
+
+}
+.sol-menu ul li{
+	position: static;
+	text-indent: 10px;
+	list-style: none;
+	margin-top: 5px;
+	background-color: green;
+	
+}
+.sol-menu ul li a{
+	position: static;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	color: #ccc;
+	transition: all 250ms ease;
+}
+.sol-menu .alt_menu{
+	position: relative;
+	margin-left: 5px;
+	background-color: yellow;
+	opacity: 0;
+}
+.sol-menu ul li a:hover{
+	color: yellow;
+}
+.sol-menu ul li a:hover .alt_menu{
+	opacity: 1;
+}

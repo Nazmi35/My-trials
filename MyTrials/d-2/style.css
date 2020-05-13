@@ -1,0 +1,37 @@
+*{margin: 0; padding: 0; left: 0; top: 0;}
+body{background: black;}
+.kutu{
+	position: static;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 200px; 
+	height: 350px;
+	background: red;
+}
+.sol-kapak{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background: rgba(0,0,0,0.5);
+	z-index: 2;
+	transition: all 0.5s ease;
+}
+.sag-kapak{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: right;
+	background: rgba(0,0,0,0.5);
+	z-index: 2;	
+	transition: all 0.5s ease;
+}
+.kutu:hover .sol-kapak{
+	left: -90px;
+	opacity: 0;
+}
+.kutu:hover .sag-kapak{
+	left: 90px;
+	opacity: 0;
+}
+

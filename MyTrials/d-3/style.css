@@ -1,0 +1,28 @@
+*{margin: 0; padding: 0; top: 0; left: 0; font-family: Arial; text-align: center;}
+.kutu{
+	position: static;
+	width: 150px; height: 90px;
+	background: red;
+	margin: 0px auto;
+	margin-top: 15px;
+	margin-left: 10px;
+	float: left;
+	transition: all 250ms;
+}
+.kutu:hover{
+	margin-top: 10px;
+	background: rgba(0,0,0,0.5);
+}
+p{
+	position: relative; 
+	margin: 0px auto;
+	top: 85px;
+	z-index: -1;
+	opacity: 0;
+	transition: all 250ms;
+}
+.kutu:hover p{
+	top: 95px;
+	opacity: 1;
+
+}
